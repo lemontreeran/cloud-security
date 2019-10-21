@@ -34,9 +34,9 @@ persistent disks/EBS Volumes/ managed disks,Zonal or multi-zonal depending on vo
 Snapshot/ EBS Snapshot/,Global,Regional,Regional,Snapshot is global in GCP. But it is attached to a region. Copy across region will be extra cost.
 ,,Cross-region replication,Cross-region replication,"Amazon EBS volume is tied to its Availability Zone, redundant within a single Availability Zone and can be attached only to instances in the same Availability Zone."
 ,,,,Azure zone-redundant snapshots are backed byæzone-redundant storageæthat replicates your data across multiple zones.
-,,,,GCP: "Zonal standard persistent disks (HDD), regional persistent disks, zonal SSD persistent disks, regional SSD persistent disks"
-,,,,AWS: "EBS Provisioned IOPS SSD, EBS General Purpose SSD, Throughput Optimized HDD, Cold HDD"
-,,,,AZure: "Ultra disk, Premium solid state drive (SSD), Standard SSD, and Standard hard disk drive (HDD)"
+,,,,GCP: Zonal standard persistent disks (HDD), regional persistent disks, zonal SSD persistent disks, regional SSD persistent disks
+,,,,AWS: EBS Provisioned IOPS SSD, EBS General Purpose SSD, Throughput Optimized HDD, Cold HDD
+,,,,AZure: Ultra disk, Premium solid state drive (SSD), Standard SSD, and Standard hard disk drive (HDD)
 Managed Instance Group/ Autoscaling Group/ Scale Set,Regional,Regional,Single-zone Cross-zone,
 Bucket/S3,Regional,Regional,Zonal(LRS),
 ,Multi-regional,Multi-regional,Regional(ZRS),
