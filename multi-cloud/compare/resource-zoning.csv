@@ -42,7 +42,7 @@ Bucket/S3,Regional,Regional,Zonal(LRS),
 ,Multi-regional,Multi-regional,Regional(ZRS),
 ,,,Multi-regional(GZRS),
 ,,,Global(GRS),
-Stackdriver/Cloudtrail/Activity Logs,Cross-region,Cross-region,Cross-region,GCP Audit Logging is not fully integrated across GCP platform even though it is significantly expanded
+Stackdriver/Cloudtrail/Activity Logs,Global,Cross-region,Cross-region,GCP Audit Logging is not fully integrated across GCP platform even though it is significantly expanded
 ,,,,"https://cloud.google.com/blog/products/gcp/google-cloud-audit-logging-now-available-across-the-gcp-stack"
 Billing,Project,Account,Subscription,GCP: Billing accounts for all projects that roll up into the organization. A billing account can be linked to one or more projects.
 ,,,,AWS: Consolidated billing via billing account
