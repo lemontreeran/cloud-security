@@ -1,0 +1,47 @@
+# account :: azure-devops
+
+name: $(date:yyyyMMdd).$(rev:rr)
+
+variables:
+- group: azure.vars
+- group: cloudflare.vars
+- group: sonarcloud.vars
+- { name: id, value: account }
+- { name: directory, value: account }
+- { name: sonar.key, value: accountxyz }
+- { name: sonar.name, value: ACCOUNT }
+- { name: sonar.version, value: '0.0.0' }
+- { name: namespace, value: Account }
+- { name: terraform, value: .terraformio }
+- { name: webapp, value: aspnet }
+
+trigger:
+  branches:
+    include:
+    - master
+  tags:
+    include:
+    - '*'
+  paths:
+    include:
+    - .azure/stages/aspnet.yml
+    - .azure/stages/deploy.yml
+    - account
+
+pr:
+  branches:
+    include:
+    - master
+  paths:
+    include:
+    - .azure/stages/aspnet.yml
+    - .azure/stages/deploy.yml
+    - account
+
+stages:
+- template: ../../.azure/stages/aspnet.yml
+  parameters:
+    id: $(id)
+- template: ../../.azure/stages/deploy.yml
+  parameters:
+    id: $(id)
