@@ -1,0 +1,5 @@
+Key Types	AWS KMS	Azure Key Vault	GCP Cloud KMS
+CSP Stored and Managed	SSE-S3	SSE with service-managed keys	Default Encryption
+CSP Stored and Customer Managed(Using Cloud KMS)	SSE-KMS and CSE(Client-side Encryption) with KMS managed CMK(Customer Master Key)	SSE with CMK(Customer-managed Key) and CSE with CMK(Using Key Vault)	CMEK
+CSP Stored and Customer Managed(Using their own KMS)	SSE-C and CSE with Client-side master key(CloudHSM)	CMK on customer-controlled hardware(Many Azure services don’t support HYOK(Host Your Own Key))	CSEK(Customer-supplied encryption keys)
+Customer stored and Managed	SSE-C and CSE with Client-side master key	Client-side Encryption	Client-side Encryption
