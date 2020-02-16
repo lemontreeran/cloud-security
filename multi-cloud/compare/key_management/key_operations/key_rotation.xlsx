@@ -1,5 +1,0 @@
-	AWS		Azure		GCP
-CSP Managed	AWS-managed CMK(Customer Master Key)	Once every three years automatically	"NOT a default feature for auto rotation
-You can call KV API to rotate the key. SSE uses 3 level hierarchy of keys. The AEK (Account Encryption Key) is wrapped using the CMK (Customer Managed Key) in AKV. For every write we generate a derived DEK (Data Encryption key) from AEK. So when you rotate the key in AKV, a new key simply encrypts AEK."	GMEK	For GMEK, it is not guaranteed that any particular frequency of key rotation, neither for the DEK nor the KEK.
-Customer managed 	Customer-managed CMK	Once a year automatically through opt-in or on-demand manually		CSEK	You can rotate the object's key by rewriting the object.
-				CMEK	By providing a rotation schedule, Cloud KMS will automatically rotate your keys for you. When enabling automatic rotation in the Cloud Console, the rotation period offers common options (e.g., 30 days) but you can also set it to a custom number of days.
