@@ -1,0 +1,5 @@
+Protocal for Data-in-transit,Target communication protocal for encryption,Network layer
+TLS/SSL,"HTTP(S), RDP, FTP, WebDAV, email, messaging, and voice over IP (VOIP)",Application layer
+SSH,,Application layer
+IPSec,VPN,Layer3 IP layer
+MACsec,"DHCP, ARP",Layer 2 LAN networks
