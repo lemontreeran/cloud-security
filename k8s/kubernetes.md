@@ -25,6 +25,7 @@
 * [kube-hunter](https://github.com/aquasecurity/kube-hunter) - Hunt for security weaknesses in Kubernetes clusters 
 * [katacoda](https://katacoda.com/courses/kubernetes) - Learn Kubernetes using interactive broser-based scenarios
 * [Kubesploit](https://github.com/cyberark/kubesploit) - Open Source Pen Testing Tool for Kubernetes
+* [ExtensiveRoleCheck](https://github.com/cyberark/kubernetes-rbac-audit) - Python tool that scans the Kubernetes RBAC for risky roles
 
 ## Service Token
 
