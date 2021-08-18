@@ -24,6 +24,7 @@
 * [kube-bench](https://github.com/aquasecurity/kube-bench) - Checks whether Kubernetes is deployed securely by running [CIS Kubernetes Benchmark](https://www.cisecurity.org/benchmark/kubernetes/)
 * [kube-hunter](https://github.com/aquasecurity/kube-hunter) - Hunt for security weaknesses in Kubernetes clusters 
 * [katacoda](https://katacoda.com/courses/kubernetes) - Learn Kubernetes using interactive broser-based scenarios
+* [Kubesploit](https://github.com/cyberark/kubesploit) - Open Source Pen Testing Tool for Kubernetes
 
 ## Service Token
 
